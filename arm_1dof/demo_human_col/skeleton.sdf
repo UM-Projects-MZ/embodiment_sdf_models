@@ -299,7 +299,7 @@
             <parent>world</parent>
             <child>skeleton</child>
         </joint> -->
-        <joint name="shoulder_joint" type="revolute">
+        <joint name="shoulder_joint" type="fixed">
             <parent>skeleton</parent>
             <child>upper_arm</child>
             <pose>-0.0002625510096549988 0.1382385492324829 0.0034110769629478455 5.479091100824007e-07 -4.2146872658577195e-08 -1.570796251296997</pose>
@@ -350,7 +350,7 @@
                 </dynamics>
             </axis>
         </joint>
-        <joint name="proximal_joint" type="revolute">
+        <joint name="proximal_joint" type="fixed">
             <parent>hand</parent>
             <child>proximal</child>
             <pose>-0.006849215365946293 0.01723306067287922 -0.006170365028083324 0.18470512330532074 -0.15172354876995087 -1.2801685333251953</pose>
@@ -419,7 +419,7 @@
                 </dynamics>
             </axis>
         </joint>
-        <joint name="middle_joint" type="revolute">
+        <joint name="middle_joint" type="fixed">
             <parent>proximal</parent>
             <child>middle</child>
             <pose>-0.005126905627548695 0.008538579568266869 -0.001958192093297839 0.18470518290996552 -0.1517234593629837 -1.4588162899017334</pose>
@@ -436,7 +436,7 @@
                 </dynamics>
             </axis>
         </joint>
-        <joint name="distal_joint" type="revolute">
+        <joint name="distal_joint" type="fixed">
             <parent>middle</parent>
             <child>distal</child>
             <pose>-0.0028767052572220564 0.0012630047276616096 -0.0008793922024779022 0.18470518290996552 -0.1517234444618225 -1.4789243936538696</pose>
